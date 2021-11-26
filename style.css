@@ -1,0 +1,65 @@
+html {
+
+    background-image: url('./concert.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-family: sans-serif;
+}
+
+
+#keys {
+    display:flex;
+
+    /* Left and right bounding pixels */
+    padding-left: 350px;
+    padding-right: 350px;
+
+    /* Items to the center with a gap of 75px between each bounding box */
+    justify-content: center;
+    gap: 20px;
+
+    /* Items to the middle */
+    align-items: center;
+    min-height: 90vh;
+
+}
+
+.key {
+    text-align: center;
+    /* All boxes are the same size */
+    flex: 1 1 0px;
+
+
+    /* Border */
+    border: 4px solid black;
+    border-radius: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    /* Apply to all changed properties */
+    /* specifies a transition effect with a slow start, then fast, then end slowly (this is default) */
+    transition: all .1s ease;
+}
+
+#note {
+    font-size: 40px;
+    color: white;
+}
+
+#sound {
+    font-size: 12px;
+    color: #eb2019;
+    font-weight: bold;
+    letter-spacing: 0.2em; 
+}
+
+.playing {
+    transform: scale(1.5);
+    transform: rotate(360deg);
+    border-color: #eb2019;
+    box-shadow: 0 0 1rem #eb2019;
+  }
